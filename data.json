@@ -1,0 +1,1665 @@
+{
+  "metadata": {
+    "title": "Minimum Support Price Impact on Crop Acreage",
+    "technique": "Econometric Regression",
+    "time_span": "2010-2025"
+  },
+  "crops": {
+    "Paddy": {
+      "baseline_stats": {
+        "csv_name": "Paddy(Dhan)(Common)",
+        "avg_modal": 1685.32,
+        "avg_min": 1596.65,
+        "avg_max": 1731.62,
+        "record_count": 99
+      },
+      "time_series": [
+        {
+          "year": 2010,
+          "sown_area": 44.0,
+          "sown_area_change_pct": 0.0,
+          "msp": 1097.37,
+          "msp_change_pct": 0.0,
+          "cost_index": 100.0,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 0.0
+        },
+        {
+          "year": 2011,
+          "sown_area": 44.185,
+          "sown_area_change_pct": 0.42,
+          "msp": 1152.92,
+          "msp_change_pct": 5.06,
+          "cost_index": 108.04,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 546.6824
+        },
+        {
+          "year": 2012,
+          "sown_area": 45.066,
+          "sown_area_change_pct": 1.993,
+          "msp": 1205.94,
+          "msp_change_pct": 4.6,
+          "cost_index": 115.01,
+          "lagged_area_change_pct": 0.42,
+          "interaction_term": 529.0459999999999,
+          "fitted_sown_area_change": 1.832866599848469,
+          "residual": 0.1601334001515311
+        },
+        {
+          "year": 2013,
+          "sown_area": 45.993,
+          "sown_area_change_pct": 2.058,
+          "msp": 1279.06,
+          "msp_change_pct": 6.06,
+          "cost_index": 124.69,
+          "lagged_area_change_pct": 1.993,
+          "interaction_term": 755.6214,
+          "fitted_sown_area_change": 1.9545302266771922,
+          "residual": 0.1034697733228076
+        },
+        {
+          "year": 2014,
+          "sown_area": 46.781,
+          "sown_area_change_pct": 1.713,
+          "msp": 1327.33,
+          "msp_change_pct": 3.77,
+          "cost_index": 137.92,
+          "lagged_area_change_pct": 2.058,
+          "interaction_term": 519.9584,
+          "fitted_sown_area_change": 1.8196454981094368,
+          "residual": -0.10664549810943669
+        },
+        {
+          "year": 2015,
+          "sown_area": 47.727,
+          "sown_area_change_pct": 2.021,
+          "msp": 1402.54,
+          "msp_change_pct": 5.67,
+          "cost_index": 146.49,
+          "lagged_area_change_pct": 1.713,
+          "interaction_term": 830.5983,
+          "fitted_sown_area_change": 1.6897408269485992,
+          "residual": 0.33125917305140073
+        },
+        {
+          "year": 2016,
+          "sown_area": 48.457,
+          "sown_area_change_pct": 1.53,
+          "msp": 1468.23,
+          "msp_change_pct": 4.68,
+          "cost_index": 155.59,
+          "lagged_area_change_pct": 2.021,
+          "interaction_term": 728.1612,
+          "fitted_sown_area_change": 1.6612497043393364,
+          "residual": -0.13124970433933636
+        },
+        {
+          "year": 2017,
+          "sown_area": 49.262,
+          "sown_area_change_pct": 1.662,
+          "msp": 1517.6,
+          "msp_change_pct": 3.36,
+          "cost_index": 172.31,
+          "lagged_area_change_pct": 1.53,
+          "interaction_term": 578.9616,
+          "fitted_sown_area_change": 1.543097355097789,
+          "residual": 0.11890264490221103
+        },
+        {
+          "year": 2018,
+          "sown_area": 49.595,
+          "sown_area_change_pct": 0.677,
+          "msp": 1602.6,
+          "msp_change_pct": 5.6,
+          "cost_index": 187.33,
+          "lagged_area_change_pct": 1.662,
+          "interaction_term": 1049.048,
+          "fitted_sown_area_change": 1.267342778963986,
+          "residual": -0.5903427789639859
+        },
+        {
+          "year": 2019,
+          "sown_area": 49.879,
+          "sown_area_change_pct": 0.572,
+          "msp": 1685.32,
+          "msp_change_pct": 5.16,
+          "cost_index": 197.87,
+          "lagged_area_change_pct": 0.677,
+          "interaction_term": 1021.0092000000001,
+          "fitted_sown_area_change": 1.0972590779177354,
+          "residual": -0.5252590779177354
+        },
+        {
+          "year": 2020,
+          "sown_area": 50.383,
+          "sown_area_change_pct": 1.01,
+          "msp": 1759.06,
+          "msp_change_pct": 4.38,
+          "cost_index": 214.01,
+          "lagged_area_change_pct": 0.572,
+          "interaction_term": 937.3638,
+          "fitted_sown_area_change": 1.0364168033760865,
+          "residual": -0.02641680337608654
+        },
+        {
+          "year": 2021,
+          "sown_area": 51.073,
+          "sown_area_change_pct": 1.37,
+          "msp": 1820.18,
+          "msp_change_pct": 3.47,
+          "cost_index": 226.08,
+          "lagged_area_change_pct": 1.01,
+          "interaction_term": 784.4976,
+          "fitted_sown_area_change": 1.1263626257822958,
+          "residual": 0.24363737421770426
+        },
+        {
+          "year": 2022,
+          "sown_area": 51.599,
+          "sown_area_change_pct": 1.03,
+          "msp": 1931.73,
+          "msp_change_pct": 6.13,
+          "cost_index": 238.82,
+          "lagged_area_change_pct": 1.37,
+          "interaction_term": 1463.9666,
+          "fitted_sown_area_change": 0.6151787738030334,
+          "residual": 0.4148212261969666
+        },
+        {
+          "year": 2023,
+          "sown_area": 52.162,
+          "sown_area_change_pct": 1.092,
+          "msp": 2002.89,
+          "msp_change_pct": 3.68,
+          "cost_index": 256.5,
+          "lagged_area_change_pct": 1.03,
+          "interaction_term": 943.9200000000001,
+          "fitted_sown_area_change": 0.8856939134223243,
+          "residual": 0.2063060865776758
+        },
+        {
+          "year": 2024,
+          "sown_area": 52.627,
+          "sown_area_change_pct": 0.892,
+          "msp": 2056.48,
+          "msp_change_pct": 2.68,
+          "cost_index": 261.67,
+          "lagged_area_change_pct": 1.092,
+          "interaction_term": 701.2756,
+          "fitted_sown_area_change": 1.0717774617130333,
+          "residual": -0.17977746171303333
+        },
+        {
+          "year": 2025,
+          "sown_area": 52.467,
+          "sown_area_change_pct": -0.304,
+          "msp": 2229.87,
+          "msp_change_pct": 8.43,
+          "cost_index": 268.18,
+          "lagged_area_change_pct": 0.892,
+          "interaction_term": 2260.7574,
+          "fitted_sown_area_change": -0.285161646000089,
+          "residual": -0.018838353999911017
+        }
+      ],
+      "regression": {
+        "r_squared": 0.8046356817709827,
+        "adj_r_squared": 0.7178070958914193,
+        "f_statistic": 9.266944447155495,
+        "f_pvalue": 0.002975270605731554,
+        "durbin_watson": 1.4210288368358066,
+        "coefficients": {
+          "const": {
+            "coefficient": 1.6790929758450837,
+            "std_err": 1.7430499318136405,
+            "t_stat": 0.963307444725918,
+            "p_value": 0.36056035623814975,
+            "conf_lower": -2.2639599125220657,
+            "conf_upper": 5.622145864212233
+          },
+          "msp_change_pct": {
+            "coefficient": 0.2361268586126656,
+            "std_err": 0.34381539445351983,
+            "t_stat": 0.686783845115427,
+            "p_value": 0.5095257158972507,
+            "conf_lower": -0.5416375986306545,
+            "conf_upper": 1.0138913158559857
+          },
+          "cost_index": {
+            "coefficient": -0.0005778472496271603,
+            "std_err": 0.007342335499945528,
+            "t_stat": -0.07870074169607849,
+            "p_value": 0.9389926987580584,
+            "conf_lower": -0.017187364092496472,
+            "conf_upper": 0.016031669593242155
+          },
+          "lagged_area_change_pct": {
+            "coefficient": 0.11009380934210328,
+            "std_err": 0.19677467670115498,
+            "t_stat": 0.5594917556861476,
+            "p_value": 0.5894764497693346,
+            "conf_lower": -0.3350414350147155,
+            "conf_upper": 0.5552290536989221
+          },
+          "interaction_term": {
+            "coefficient": -0.0017242189022484622,
+            "std_err": 0.0014247718308328966,
+            "t_stat": -1.2101719481922337,
+            "p_value": 0.2570366247568509,
+            "conf_lower": -0.0049472767047202115,
+            "conf_upper": 0.0014988389002232871
+          }
+        }
+      },
+      "stationarity": {
+        "sown_area_change": {
+          "adf_stat": -1.680942226103832,
+          "p_value": 0.44095739428160596,
+          "stationary": false
+        },
+        "msp_change": {
+          "adf_stat": -6.640375166654614,
+          "p_value": 5.428934398887015e-09,
+          "stationary": true
+        }
+      },
+      "granger_causality": {
+        "lag_1": {
+          "f_stat": 2.601693923950869,
+          "p_value": 0.13782499650211694,
+          "df_denom": 10,
+          "df_num": 1,
+          "causal": false
+        },
+        "lag_2": {
+          "f_stat": 9.321552526235223,
+          "p_value": 0.010627864277489995,
+          "df_denom": 7,
+          "df_num": 2,
+          "causal": true
+        }
+      }
+    },
+    "Wheat": {
+      "baseline_stats": {
+        "csv_name": "Wheat",
+        "avg_modal": 1913.4,
+        "avg_min": 1800.0,
+        "avg_max": 1909.13,
+        "record_count": 45
+      },
+      "time_series": [
+        {
+          "year": 2010,
+          "sown_area": 31.0,
+          "sown_area_change_pct": 0.0,
+          "msp": 1154.59,
+          "msp_change_pct": 0.0,
+          "cost_index": 100.0,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 0.0
+        },
+        {
+          "year": 2011,
+          "sown_area": 31.177,
+          "sown_area_change_pct": 0.57,
+          "msp": 1234.99,
+          "msp_change_pct": 6.96,
+          "cost_index": 108.04,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 751.9584
+        },
+        {
+          "year": 2012,
+          "sown_area": 31.682,
+          "sown_area_change_pct": 1.621,
+          "msp": 1309.05,
+          "msp_change_pct": 6.0,
+          "cost_index": 115.01,
+          "lagged_area_change_pct": 0.57,
+          "interaction_term": 690.0600000000001,
+          "fitted_sown_area_change": 1.7696117385565975,
+          "residual": -0.14861173855659748
+        },
+        {
+          "year": 2013,
+          "sown_area": 32.197,
+          "sown_area_change_pct": 1.625,
+          "msp": 1374.98,
+          "msp_change_pct": 5.04,
+          "cost_index": 124.69,
+          "lagged_area_change_pct": 1.621,
+          "interaction_term": 628.4376,
+          "fitted_sown_area_change": 1.815301014912051,
+          "residual": -0.19030101491205098
+        },
+        {
+          "year": 2014,
+          "sown_area": 32.649,
+          "sown_area_change_pct": 1.404,
+          "msp": 1433.3,
+          "msp_change_pct": 4.24,
+          "cost_index": 137.92,
+          "lagged_area_change_pct": 1.625,
+          "interaction_term": 584.7808,
+          "fitted_sown_area_change": 1.4630016042930563,
+          "residual": -0.05900160429305634
+        },
+        {
+          "year": 2015,
+          "sown_area": 33.294,
+          "sown_area_change_pct": 1.975,
+          "msp": 1532.15,
+          "msp_change_pct": 6.9,
+          "cost_index": 146.49,
+          "lagged_area_change_pct": 1.404,
+          "interaction_term": 1010.7810000000001,
+          "fitted_sown_area_change": 2.2477846373366077,
+          "residual": -0.2727846373366076
+        },
+        {
+          "year": 2016,
+          "sown_area": 34.192,
+          "sown_area_change_pct": 2.699,
+          "msp": 1640.11,
+          "msp_change_pct": 7.05,
+          "cost_index": 155.59,
+          "lagged_area_change_pct": 1.975,
+          "interaction_term": 1096.9095,
+          "fitted_sown_area_change": 2.4759502562933653,
+          "residual": 0.22304974370663455
+        },
+        {
+          "year": 2017,
+          "sown_area": 35.025,
+          "sown_area_change_pct": 2.436,
+          "msp": 1745.36,
+          "msp_change_pct": 6.42,
+          "cost_index": 172.31,
+          "lagged_area_change_pct": 2.699,
+          "interaction_term": 1106.2302,
+          "fitted_sown_area_change": 2.49827337930918,
+          "residual": -0.062273379309179866
+        },
+        {
+          "year": 2018,
+          "sown_area": 35.929,
+          "sown_area_change_pct": 2.581,
+          "msp": 1823.63,
+          "msp_change_pct": 4.48,
+          "cost_index": 187.33,
+          "lagged_area_change_pct": 2.436,
+          "interaction_term": 839.2384000000002,
+          "fitted_sown_area_change": 1.942762151268239,
+          "residual": 0.638237848731761
+        },
+        {
+          "year": 2019,
+          "sown_area": 36.7,
+          "sown_area_change_pct": 2.147,
+          "msp": 1913.4,
+          "msp_change_pct": 4.92,
+          "cost_index": 197.87,
+          "lagged_area_change_pct": 2.581,
+          "interaction_term": 973.5204,
+          "fitted_sown_area_change": 2.04494637223005,
+          "residual": 0.10205362776994997
+        },
+        {
+          "year": 2020,
+          "sown_area": 37.264,
+          "sown_area_change_pct": 1.538,
+          "msp": 1991.09,
+          "msp_change_pct": 4.06,
+          "cost_index": 214.01,
+          "lagged_area_change_pct": 2.147,
+          "interaction_term": 868.8805999999998,
+          "fitted_sown_area_change": 1.7670902058416038,
+          "residual": -0.22909020584160378
+        },
+        {
+          "year": 2021,
+          "sown_area": 37.799,
+          "sown_area_change_pct": 1.435,
+          "msp": 2082.26,
+          "msp_change_pct": 4.58,
+          "cost_index": 226.08,
+          "lagged_area_change_pct": 1.538,
+          "interaction_term": 1035.4464,
+          "fitted_sown_area_change": 1.4242277436921817,
+          "residual": 0.010772256307818306
+        },
+        {
+          "year": 2022,
+          "sown_area": 38.418,
+          "sown_area_change_pct": 1.636,
+          "msp": 2240.81,
+          "msp_change_pct": 7.61,
+          "cost_index": 238.82,
+          "lagged_area_change_pct": 1.435,
+          "interaction_term": 1817.4202,
+          "fitted_sown_area_change": 0.9593214149153688,
+          "residual": 0.6766785850846311
+        },
+        {
+          "year": 2023,
+          "sown_area": 38.971,
+          "sown_area_change_pct": 1.44,
+          "msp": 2379.45,
+          "msp_change_pct": 6.19,
+          "cost_index": 256.5,
+          "lagged_area_change_pct": 1.636,
+          "interaction_term": 1587.7350000000001,
+          "fitted_sown_area_change": 1.0815191640131,
+          "residual": 0.35848083598689984
+        },
+        {
+          "year": 2024,
+          "sown_area": 39.792,
+          "sown_area_change_pct": 2.106,
+          "msp": 2426.42,
+          "msp_change_pct": 1.97,
+          "cost_index": 261.67,
+          "lagged_area_change_pct": 1.44,
+          "interaction_term": 515.4899,
+          "fitted_sown_area_change": 1.9628530343575599,
+          "residual": 0.14314696564244
+        },
+        {
+          "year": 2025,
+          "sown_area": 39.808,
+          "sown_area_change_pct": 0.041,
+          "msp": 2575.6,
+          "msp_change_pct": 6.15,
+          "cost_index": 268.18,
+          "lagged_area_change_pct": 2.106,
+          "interaction_term": 1649.3070000000002,
+          "fitted_sown_area_change": 1.2313572829844137,
+          "residual": -1.1903572829844138
+        }
+      ],
+      "regression": {
+        "r_squared": 0.5307840933521997,
+        "adj_r_squared": 0.3222436903976218,
+        "f_statistic": 2.5452338531627823,
+        "f_pvalue": 0.11250929456904205,
+        "durbin_watson": 1.3809940926142878,
+        "coefficients": {
+          "const": {
+            "coefficient": -4.028230009034427,
+            "std_err": 3.0023728112618873,
+            "t_stat": -1.3416821501728746,
+            "p_value": 0.2125669919427902,
+            "conf_lower": -10.820069169421089,
+            "conf_upper": 2.7636091513522336
+          },
+          "msp_change_pct": {
+            "coefficient": 1.0801884817997682,
+            "std_err": 0.5076759363307888,
+            "t_stat": 2.127712590844457,
+            "p_value": 0.062252500979476794,
+            "conf_lower": -0.06825427395121109,
+            "conf_upper": 2.2286312375507475
+          },
+          "cost_index": {
+            "coefficient": 0.021813027248584124,
+            "std_err": 0.012583389990849885,
+            "t_stat": 1.7334778040294105,
+            "p_value": 0.11704427070091553,
+            "conf_lower": -0.006652578551500182,
+            "conf_upper": 0.050278633048668434
+          },
+          "lagged_area_change_pct": {
+            "coefficient": 0.5322382133440277,
+            "std_err": 0.27982080946850196,
+            "t_stat": 1.9020680211560144,
+            "p_value": 0.08959132152084878,
+            "conf_lower": -0.10076043509513577,
+            "conf_upper": 1.1652368617831912
+          },
+          "interaction_term": {
+            "coefficient": -0.005065329375233081,
+            "std_err": 0.0022361177162549786,
+            "t_stat": -2.2652337747748046,
+            "p_value": 0.049749187506274224,
+            "conf_lower": -0.010123779083919246,
+            "conf_upper": -6.879666546917053e-06
+          }
+        }
+      },
+      "stationarity": {
+        "sown_area_change": {
+          "adf_stat": 1.5971000746051152,
+          "p_value": 0.99784884960998,
+          "stationary": false
+        },
+        "msp_change": {
+          "adf_stat": -2.466674776690914,
+          "p_value": 0.12379465973822512,
+          "stationary": false
+        }
+      },
+      "granger_causality": {
+        "lag_1": {
+          "f_stat": 9.535505171544798,
+          "p_value": 0.011483791396808643,
+          "df_denom": 10,
+          "df_num": 1,
+          "causal": true
+        },
+        "lag_2": {
+          "f_stat": 4.3689711859381735,
+          "p_value": 0.05868475726564629,
+          "df_denom": 7,
+          "df_num": 2,
+          "causal": false
+        }
+      }
+    },
+    "Maize": {
+      "baseline_stats": {
+        "csv_name": "Maize",
+        "avg_modal": 1767.64,
+        "avg_min": 1671.5,
+        "avg_max": 1826.14,
+        "record_count": 22
+      },
+      "time_series": [
+        {
+          "year": 2010,
+          "sown_area": 9.8,
+          "sown_area_change_pct": 0.0,
+          "msp": 1073.3,
+          "msp_change_pct": 0.0,
+          "cost_index": 100.0,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 0.0
+        },
+        {
+          "year": 2011,
+          "sown_area": 9.883,
+          "sown_area_change_pct": 0.849,
+          "msp": 1140.59,
+          "msp_change_pct": 6.27,
+          "cost_index": 108.04,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 677.4108
+        },
+        {
+          "year": 2012,
+          "sown_area": 10.116,
+          "sown_area_change_pct": 2.359,
+          "msp": 1194.26,
+          "msp_change_pct": 4.71,
+          "cost_index": 115.01,
+          "lagged_area_change_pct": 0.849,
+          "interaction_term": 541.6971,
+          "fitted_sown_area_change": 2.239842524111106,
+          "residual": 0.11915747588889403
+        },
+        {
+          "year": 2013,
+          "sown_area": 10.35,
+          "sown_area_change_pct": 2.311,
+          "msp": 1265.83,
+          "msp_change_pct": 5.99,
+          "cost_index": 124.69,
+          "lagged_area_change_pct": 2.359,
+          "interaction_term": 746.8931,
+          "fitted_sown_area_change": 2.6657155712222673,
+          "residual": -0.3547155712222674
+        },
+        {
+          "year": 2014,
+          "sown_area": 10.615,
+          "sown_area_change_pct": 2.564,
+          "msp": 1352.83,
+          "msp_change_pct": 6.87,
+          "cost_index": 137.92,
+          "lagged_area_change_pct": 2.311,
+          "interaction_term": 947.5103999999999,
+          "fitted_sown_area_change": 2.6277716054274296,
+          "residual": -0.06377160542742955
+        },
+        {
+          "year": 2015,
+          "sown_area": 10.897,
+          "sown_area_change_pct": 2.659,
+          "msp": 1417.05,
+          "msp_change_pct": 4.75,
+          "cost_index": 146.49,
+          "lagged_area_change_pct": 2.564,
+          "interaction_term": 695.8275000000001,
+          "fitted_sown_area_change": 2.3991097220734554,
+          "residual": 0.2598902779265444
+        },
+        {
+          "year": 2016,
+          "sown_area": 11.109,
+          "sown_area_change_pct": 1.944,
+          "msp": 1477.8,
+          "msp_change_pct": 4.29,
+          "cost_index": 155.59,
+          "lagged_area_change_pct": 2.659,
+          "interaction_term": 667.4811,
+          "fitted_sown_area_change": 2.3069393399640172,
+          "residual": -0.3629393399640173
+        },
+        {
+          "year": 2017,
+          "sown_area": 11.343,
+          "sown_area_change_pct": 2.103,
+          "msp": 1547.59,
+          "msp_change_pct": 4.72,
+          "cost_index": 172.31,
+          "lagged_area_change_pct": 1.944,
+          "interaction_term": 813.3032,
+          "fitted_sown_area_change": 2.0430166969100565,
+          "residual": 0.05998330308994371
+        },
+        {
+          "year": 2018,
+          "sown_area": 11.588,
+          "sown_area_change_pct": 2.16,
+          "msp": 1667.02,
+          "msp_change_pct": 7.72,
+          "cost_index": 187.33,
+          "lagged_area_change_pct": 2.103,
+          "interaction_term": 1446.1876,
+          "fitted_sown_area_change": 2.1641493958727374,
+          "residual": -0.004149395872737216
+        },
+        {
+          "year": 2019,
+          "sown_area": 11.871,
+          "sown_area_change_pct": 2.446,
+          "msp": 1767.64,
+          "msp_change_pct": 6.04,
+          "cost_index": 197.87,
+          "lagged_area_change_pct": 2.16,
+          "interaction_term": 1195.1348,
+          "fitted_sown_area_change": 1.9694583180008691,
+          "residual": 0.47654168199913105
+        },
+        {
+          "year": 2020,
+          "sown_area": 12.125,
+          "sown_area_change_pct": 2.143,
+          "msp": 1893.92,
+          "msp_change_pct": 7.14,
+          "cost_index": 214.01,
+          "lagged_area_change_pct": 2.446,
+          "interaction_term": 1528.0313999999998,
+          "fitted_sown_area_change": 1.9460519631920312,
+          "residual": 0.19694803680796857
+        },
+        {
+          "year": 2021,
+          "sown_area": 12.325,
+          "sown_area_change_pct": 1.651,
+          "msp": 2001.38,
+          "msp_change_pct": 5.67,
+          "cost_index": 226.08,
+          "lagged_area_change_pct": 2.143,
+          "interaction_term": 1281.8736000000001,
+          "fitted_sown_area_change": 1.6983837156331831,
+          "residual": -0.04738371563318311
+        },
+        {
+          "year": 2022,
+          "sown_area": 12.513,
+          "sown_area_change_pct": 1.524,
+          "msp": 2099.49,
+          "msp_change_pct": 4.9,
+          "cost_index": 238.82,
+          "lagged_area_change_pct": 1.651,
+          "interaction_term": 1170.218,
+          "fitted_sown_area_change": 1.4478690444095916,
+          "residual": 0.07613095559040839
+        },
+        {
+          "year": 2023,
+          "sown_area": 12.668,
+          "sown_area_change_pct": 1.242,
+          "msp": 2218.81,
+          "msp_change_pct": 5.68,
+          "cost_index": 256.5,
+          "lagged_area_change_pct": 1.524,
+          "interaction_term": 1456.9199999999998,
+          "fitted_sown_area_change": 1.2878485936964104,
+          "residual": -0.04584859369641037
+        },
+        {
+          "year": 2024,
+          "sown_area": 12.827,
+          "sown_area_change_pct": 1.257,
+          "msp": 2252.64,
+          "msp_change_pct": 1.52,
+          "cost_index": 261.67,
+          "lagged_area_change_pct": 1.242,
+          "interaction_term": 397.7384,
+          "fitted_sown_area_change": 1.1192598860675413,
+          "residual": 0.13774011393245855
+        },
+        {
+          "year": 2025,
+          "sown_area": 12.913,
+          "sown_area_change_pct": 0.67,
+          "msp": 2366.64,
+          "msp_change_pct": 5.06,
+          "cost_index": 268.18,
+          "lagged_area_change_pct": 1.257,
+          "interaction_term": 1356.9908,
+          "fitted_sown_area_change": 1.117583623418086,
+          "residual": -0.447583623418086
+        }
+      ],
+      "regression": {
+        "r_squared": 0.8091664182524049,
+        "adj_r_squared": 0.7243514930312516,
+        "f_statistic": 9.540377665163508,
+        "f_pvalue": 0.002688942187529729,
+        "durbin_watson": 2.089795846583503,
+        "coefficients": {
+          "const": {
+            "coefficient": 1.994393335087275,
+            "std_err": 1.5696630198193224,
+            "t_stat": 1.2705869412129245,
+            "p_value": 0.2357354921712472,
+            "conf_lower": -1.556431108376466,
+            "conf_upper": 5.545217778551016
+          },
+          "msp_change_pct": {
+            "coefficient": 0.20420943516004392,
+            "std_err": 0.2899494674494175,
+            "t_stat": 0.7042931892801935,
+            "p_value": 0.4990670808233844,
+            "conf_lower": -0.45170182948018084,
+            "conf_upper": 0.8601206998002686
+          },
+          "cost_index": {
+            "coefficient": -0.004548912269836431,
+            "std_err": 0.006744790935228416,
+            "t_stat": -0.6744333980875836,
+            "p_value": 0.5169833019552573,
+            "conf_lower": -0.019806689395539798,
+            "conf_upper": 0.010708864855866933
+          },
+          "lagged_area_change_pct": {
+            "coefficient": 0.23704670930406918,
+            "std_err": 0.17922353397134383,
+            "t_stat": 1.322631598939293,
+            "p_value": 0.21857890381432507,
+            "conf_lower": -0.16838509181121364,
+            "conf_upper": 0.642478510419352
+          },
+          "interaction_term": {
+            "coefficient": -0.0007281920221194511,
+            "std_err": 0.0012953390308171732,
+            "t_stat": -0.5621632675270091,
+            "p_value": 0.5877303614141082,
+            "conf_lower": -0.003658452488934604,
+            "conf_upper": 0.002202068444695702
+          }
+        }
+      },
+      "stationarity": {
+        "sown_area_change": {
+          "adf_stat": 5.083691405981548,
+          "p_value": 1.0,
+          "stationary": false
+        },
+        "msp_change": {
+          "adf_stat": -1.7163478892139512,
+          "p_value": 0.4227098445444077,
+          "stationary": false
+        }
+      },
+      "granger_causality": {
+        "lag_1": {
+          "f_stat": 2.351995342728628,
+          "p_value": 0.1561295508593332,
+          "df_denom": 10,
+          "df_num": 1,
+          "causal": false
+        },
+        "lag_2": {
+          "f_stat": 5.105176630305234,
+          "p_value": 0.04291201355479426,
+          "df_denom": 7,
+          "df_num": 2,
+          "causal": true
+        }
+      }
+    },
+    "Cotton": {
+      "baseline_stats": {
+        "csv_name": "Cotton",
+        "avg_modal": 5207.87,
+        "avg_min": 5027.17,
+        "avg_max": 5349.39,
+        "record_count": 23
+      },
+      "time_series": [
+        {
+          "year": 2010,
+          "sown_area": 12.5,
+          "sown_area_change_pct": 0.0,
+          "msp": 3072.09,
+          "msp_change_pct": 0.0,
+          "cost_index": 100.0,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 0.0
+        },
+        {
+          "year": 2011,
+          "sown_area": 12.65,
+          "sown_area_change_pct": 1.197,
+          "msp": 3275.71,
+          "msp_change_pct": 6.63,
+          "cost_index": 108.04,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 716.3052
+        },
+        {
+          "year": 2012,
+          "sown_area": 12.935,
+          "sown_area_change_pct": 2.255,
+          "msp": 3512.03,
+          "msp_change_pct": 7.21,
+          "cost_index": 115.01,
+          "lagged_area_change_pct": 1.197,
+          "interaction_term": 829.2221000000001,
+          "fitted_sown_area_change": 2.40748247978739,
+          "residual": -0.15248247978739027
+        },
+        {
+          "year": 2013,
+          "sown_area": 13.384,
+          "sown_area_change_pct": 3.474,
+          "msp": 3643.62,
+          "msp_change_pct": 3.75,
+          "cost_index": 124.69,
+          "lagged_area_change_pct": 2.255,
+          "interaction_term": 467.5875,
+          "fitted_sown_area_change": 3.4946376467441445,
+          "residual": -0.020637646744144256
+        },
+        {
+          "year": 2014,
+          "sown_area": 13.72,
+          "sown_area_change_pct": 2.511,
+          "msp": 3842.12,
+          "msp_change_pct": 5.45,
+          "cost_index": 137.92,
+          "lagged_area_change_pct": 3.474,
+          "interaction_term": 751.664,
+          "fitted_sown_area_change": 3.408422219988581,
+          "residual": -0.8974222199885808
+        },
+        {
+          "year": 2015,
+          "sown_area": 14.134,
+          "sown_area_change_pct": 3.018,
+          "msp": 4070.82,
+          "msp_change_pct": 5.95,
+          "cost_index": 146.49,
+          "lagged_area_change_pct": 2.511,
+          "interaction_term": 871.6155000000001,
+          "fitted_sown_area_change": 2.920006176683703,
+          "residual": 0.09799382331629669
+        },
+        {
+          "year": 2016,
+          "sown_area": 14.683,
+          "sown_area_change_pct": 3.884,
+          "msp": 4282.97,
+          "msp_change_pct": 5.21,
+          "cost_index": 155.59,
+          "lagged_area_change_pct": 3.018,
+          "interaction_term": 810.6239,
+          "fitted_sown_area_change": 3.1528576437701776,
+          "residual": 0.7311423562298223
+        },
+        {
+          "year": 2017,
+          "sown_area": 15.126,
+          "sown_area_change_pct": 3.015,
+          "msp": 4676.78,
+          "msp_change_pct": 9.19,
+          "cost_index": 172.31,
+          "lagged_area_change_pct": 3.884,
+          "interaction_term": 1583.5289,
+          "fitted_sown_area_change": 2.705625032760939,
+          "residual": 0.3093749672390613
+        },
+        {
+          "year": 2018,
+          "sown_area": 15.608,
+          "sown_area_change_pct": 3.189,
+          "msp": 4938.23,
+          "msp_change_pct": 5.59,
+          "cost_index": 187.33,
+          "lagged_area_change_pct": 3.015,
+          "interaction_term": 1047.1747,
+          "fitted_sown_area_change": 2.8312239215110555,
+          "residual": 0.35777607848894455
+        },
+        {
+          "year": 2019,
+          "sown_area": 16.057,
+          "sown_area_change_pct": 2.878,
+          "msp": 5207.87,
+          "msp_change_pct": 5.46,
+          "cost_index": 197.87,
+          "lagged_area_change_pct": 3.189,
+          "interaction_term": 1080.3702,
+          "fitted_sown_area_change": 2.8192010105077623,
+          "residual": 0.05879898949223783
+        },
+        {
+          "year": 2020,
+          "sown_area": 16.436,
+          "sown_area_change_pct": 2.362,
+          "msp": 5536.39,
+          "msp_change_pct": 6.31,
+          "cost_index": 214.01,
+          "lagged_area_change_pct": 2.878,
+          "interaction_term": 1350.4030999999998,
+          "fitted_sown_area_change": 2.5138945775148893,
+          "residual": -0.15189457751488922
+        },
+        {
+          "year": 2021,
+          "sown_area": 16.715,
+          "sown_area_change_pct": 1.698,
+          "msp": 6049.74,
+          "msp_change_pct": 9.27,
+          "cost_index": 226.08,
+          "lagged_area_change_pct": 2.362,
+          "interaction_term": 2095.7616,
+          "fitted_sown_area_change": 2.0776537522423757,
+          "residual": -0.37965375224237574
+        },
+        {
+          "year": 2022,
+          "sown_area": 17.122,
+          "sown_area_change_pct": 2.438,
+          "msp": 6403.6,
+          "msp_change_pct": 5.85,
+          "cost_index": 238.82,
+          "lagged_area_change_pct": 1.698,
+          "interaction_term": 1397.097,
+          "fitted_sown_area_change": 1.968392607228081,
+          "residual": 0.4696073927719191
+        },
+        {
+          "year": 2023,
+          "sown_area": 17.415,
+          "sown_area_change_pct": 1.714,
+          "msp": 6788.78,
+          "msp_change_pct": 6.02,
+          "cost_index": 256.5,
+          "lagged_area_change_pct": 2.438,
+          "interaction_term": 1544.1299999999999,
+          "fitted_sown_area_change": 2.080386696141421,
+          "residual": -0.36638669614142083
+        },
+        {
+          "year": 2024,
+          "sown_area": 17.754,
+          "sown_area_change_pct": 1.949,
+          "msp": 7152.05,
+          "msp_change_pct": 5.35,
+          "cost_index": 261.67,
+          "lagged_area_change_pct": 1.714,
+          "interaction_term": 1399.9345,
+          "fitted_sown_area_change": 1.8024233064340875,
+          "residual": 0.14657669356591252
+        },
+        {
+          "year": 2025,
+          "sown_area": 18.037,
+          "sown_area_change_pct": 1.596,
+          "msp": 7270.95,
+          "msp_change_pct": 1.66,
+          "cost_index": 268.18,
+          "lagged_area_change_pct": 1.949,
+          "interaction_term": 445.17879999999997,
+          "fitted_sown_area_change": 1.798792928684653,
+          "residual": -0.20279292868465282
+        }
+      ],
+      "regression": {
+        "r_squared": 0.6592040267567709,
+        "adj_r_squared": 0.5077391497597803,
+        "f_statistic": 4.352190684906229,
+        "f_pvalue": 0.03123370752750681,
+        "durbin_watson": 1.990440545363641,
+        "coefficients": {
+          "const": {
+            "coefficient": 5.724765214435088,
+            "std_err": 1.936588073763415,
+            "t_stat": 2.956108886548095,
+            "p_value": 0.016060718839433597,
+            "conf_lower": 1.3438986319816006,
+            "conf_upper": 10.105631796888575
+          },
+          "msp_change_pct": {
+            "coefficient": -0.4304083805361916,
+            "std_err": 0.31643353522149986,
+            "t_stat": -1.3601857345331956,
+            "p_value": 0.20686231547804723,
+            "conf_lower": -1.1462307687870656,
+            "conf_upper": 0.28541400771468234
+          },
+          "cost_index": {
+            "coefficient": -0.017118740085067023,
+            "std_err": 0.008236792072968535,
+            "t_stat": -2.0783261169414757,
+            "p_value": 0.0674479203824782,
+            "conf_lower": -0.03575165827141227,
+            "conf_upper": 0.0015141781012782234
+          },
+          "lagged_area_change_pct": {
+            "coefficient": 0.33476481206631603,
+            "std_err": 0.1923217799211409,
+            "t_stat": 1.7406495104380901,
+            "p_value": 0.1157330173911458,
+            "conf_lower": -0.10029727994439286,
+            "conf_upper": 0.7698269040770249
+          },
+          "interaction_term": {
+            "coefficient": 0.0016329455114117459,
+            "std_err": 0.0014571218083616949,
+            "t_stat": 1.1206650686586985,
+            "p_value": 0.29144216817800783,
+            "conf_lower": -0.0016632930244431354,
+            "conf_upper": 0.004929184047266627
+          }
+        }
+      },
+      "stationarity": {
+        "sown_area_change": {
+          "adf_stat": -0.4950644571505953,
+          "p_value": 0.8929760414057456,
+          "stationary": false
+        },
+        "msp_change": {
+          "adf_stat": -2.7411397210729285,
+          "p_value": 0.0671858109707619,
+          "stationary": false
+        }
+      },
+      "granger_causality": {
+        "lag_1": {
+          "f_stat": 2.870439425750393,
+          "p_value": 0.1210840626710502,
+          "df_denom": 10,
+          "df_num": 1,
+          "causal": false
+        },
+        "lag_2": {
+          "f_stat": 0.9200036046087527,
+          "p_value": 0.44183383747177113,
+          "df_denom": 7,
+          "df_num": 2,
+          "causal": false
+        }
+      }
+    },
+    "Mustard": {
+      "baseline_stats": {
+        "csv_name": "Mustard",
+        "avg_modal": 3700.39,
+        "avg_min": 3569.61,
+        "avg_max": 3783.03,
+        "record_count": 36
+      },
+      "time_series": [
+        {
+          "year": 2010,
+          "sown_area": 6.8,
+          "sown_area_change_pct": 0.0,
+          "msp": 2314.06,
+          "msp_change_pct": 0.0,
+          "cost_index": 100.0,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 0.0
+        },
+        {
+          "year": 2011,
+          "sown_area": 6.858,
+          "sown_area_change_pct": 0.848,
+          "msp": 2451.64,
+          "msp_change_pct": 5.95,
+          "cost_index": 108.04,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 642.8380000000001
+        },
+        {
+          "year": 2012,
+          "sown_area": 7.0,
+          "sown_area_change_pct": 2.067,
+          "msp": 2605.67,
+          "msp_change_pct": 6.28,
+          "cost_index": 115.01,
+          "lagged_area_change_pct": 0.848,
+          "interaction_term": 722.2628000000001,
+          "fitted_sown_area_change": 2.090474646273818,
+          "residual": -0.02347464627381779
+        },
+        {
+          "year": 2013,
+          "sown_area": 7.151,
+          "sown_area_change_pct": 2.158,
+          "msp": 2697.37,
+          "msp_change_pct": 3.52,
+          "cost_index": 124.69,
+          "lagged_area_change_pct": 2.067,
+          "interaction_term": 438.9088,
+          "fitted_sown_area_change": 2.3780905830003296,
+          "residual": -0.2200905830003297
+        },
+        {
+          "year": 2014,
+          "sown_area": 7.305,
+          "sown_area_change_pct": 2.147,
+          "msp": 2795.68,
+          "msp_change_pct": 3.64,
+          "cost_index": 137.92,
+          "lagged_area_change_pct": 2.158,
+          "interaction_term": 502.0288,
+          "fitted_sown_area_change": 2.3434293539676485,
+          "residual": -0.1964293539676487
+        },
+        {
+          "year": 2015,
+          "sown_area": 7.468,
+          "sown_area_change_pct": 2.234,
+          "msp": 2982.23,
+          "msp_change_pct": 6.67,
+          "cost_index": 146.49,
+          "lagged_area_change_pct": 2.147,
+          "interaction_term": 977.0883,
+          "fitted_sown_area_change": 2.298599250081736,
+          "residual": -0.06459925008173606
+        },
+        {
+          "year": 2016,
+          "sown_area": 7.633,
+          "sown_area_change_pct": 2.207,
+          "msp": 3157.88,
+          "msp_change_pct": 5.89,
+          "cost_index": 155.59,
+          "lagged_area_change_pct": 2.234,
+          "interaction_term": 916.4250999999999,
+          "fitted_sown_area_change": 2.2789124089593407,
+          "residual": -0.07191240895934081
+        },
+        {
+          "year": 2017,
+          "sown_area": 7.86,
+          "sown_area_change_pct": 2.97,
+          "msp": 3340.31,
+          "msp_change_pct": 5.78,
+          "cost_index": 172.31,
+          "lagged_area_change_pct": 2.207,
+          "interaction_term": 995.9518,
+          "fitted_sown_area_change": 2.189533606100713,
+          "residual": 0.7804663938992871
+        },
+        {
+          "year": 2018,
+          "sown_area": 8.076,
+          "sown_area_change_pct": 2.747,
+          "msp": 3443.48,
+          "msp_change_pct": 3.09,
+          "cost_index": 187.33,
+          "lagged_area_change_pct": 2.97,
+          "interaction_term": 578.8497,
+          "fitted_sown_area_change": 2.3495375760602015,
+          "residual": 0.39746242393979836
+        },
+        {
+          "year": 2019,
+          "sown_area": 8.201,
+          "sown_area_change_pct": 1.552,
+          "msp": 3700.39,
+          "msp_change_pct": 7.46,
+          "cost_index": 197.87,
+          "lagged_area_change_pct": 2.747,
+          "interaction_term": 1476.1102,
+          "fitted_sown_area_change": 2.2013322784328984,
+          "residual": -0.6493322784328983
+        },
+        {
+          "year": 2020,
+          "sown_area": 8.369,
+          "sown_area_change_pct": 2.044,
+          "msp": 4018.62,
+          "msp_change_pct": 8.6,
+          "cost_index": 214.01,
+          "lagged_area_change_pct": 1.552,
+          "interaction_term": 1840.4859999999999,
+          "fitted_sown_area_change": 1.7691346667825747,
+          "residual": 0.27486533321742534
+        },
+        {
+          "year": 2021,
+          "sown_area": 8.528,
+          "sown_area_change_pct": 1.902,
+          "msp": 4176.69,
+          "msp_change_pct": 3.93,
+          "cost_index": 226.08,
+          "lagged_area_change_pct": 2.044,
+          "interaction_term": 888.4944,
+          "fitted_sown_area_change": 1.9040600048327347,
+          "residual": -0.0020600048327348297
+        },
+        {
+          "year": 2022,
+          "sown_area": 8.681,
+          "sown_area_change_pct": 1.795,
+          "msp": 4379.5,
+          "msp_change_pct": 4.86,
+          "cost_index": 238.82,
+          "lagged_area_change_pct": 1.902,
+          "interaction_term": 1160.6652000000001,
+          "fitted_sown_area_change": 1.7912733944685528,
+          "residual": 0.0037266055314471025
+        },
+        {
+          "year": 2023,
+          "sown_area": 8.834,
+          "sown_area_change_pct": 1.763,
+          "msp": 4691.63,
+          "msp_change_pct": 7.13,
+          "cost_index": 256.5,
+          "lagged_area_change_pct": 1.795,
+          "interaction_term": 1828.845,
+          "fitted_sown_area_change": 1.6366691746687219,
+          "residual": 0.12633082533127804
+        },
+        {
+          "year": 2024,
+          "sown_area": 8.969,
+          "sown_area_change_pct": 1.528,
+          "msp": 4834.17,
+          "msp_change_pct": 3.04,
+          "cost_index": 261.67,
+          "lagged_area_change_pct": 1.763,
+          "interaction_term": 795.4768,
+          "fitted_sown_area_change": 1.677045452800024,
+          "residual": -0.14904545280002401
+        },
+        {
+          "year": 2025,
+          "sown_area": 9.087,
+          "sown_area_change_pct": 1.319,
+          "msp": 5122.04,
+          "msp_change_pct": 5.95,
+          "cost_index": 268.18,
+          "lagged_area_change_pct": 1.528,
+          "interaction_term": 1595.671,
+          "fitted_sown_area_change": 1.5249076035702052,
+          "residual": -0.2059076035702052
+        }
+      ],
+      "regression": {
+        "r_squared": 0.4520311564514321,
+        "adj_r_squared": 0.20848944820762416,
+        "f_statistic": 1.8560728661675756,
+        "f_pvalue": 0.20250560224963385,
+        "durbin_watson": 2.1158524002169425,
+        "coefficients": {
+          "const": {
+            "coefficient": 2.288860703249145,
+            "std_err": 1.8052123285041755,
+            "t_stat": 1.2679177219810631,
+            "p_value": 0.23664481021741612,
+            "conf_lower": -1.7948132960482015,
+            "conf_upper": 6.372534702546491
+          },
+          "msp_change_pct": {
+            "coefficient": 0.021692739989532,
+            "std_err": 0.30607127713325427,
+            "t_stat": 0.07087479816045474,
+            "p_value": 0.9450473230792408,
+            "conf_lower": -0.6706885919042536,
+            "conf_upper": 0.7140740718833176
+          },
+          "cost_index": {
+            "coefficient": -0.004017529873239268,
+            "std_err": 0.00789502809508518,
+            "t_stat": -0.5088683440835714,
+            "p_value": 0.6230844153372981,
+            "conf_lower": -0.021877324229029275,
+            "conf_upper": 0.013842264482550739
+          },
+          "lagged_area_change_pct": {
+            "coefficient": 0.28122633361614835,
+            "std_err": 0.22664899316867243,
+            "t_stat": 1.2408011599101143,
+            "p_value": 0.24604812398602138,
+            "conf_lower": -0.2314893097213654,
+            "conf_upper": 0.7939419769536621
+          },
+          "interaction_term": {
+            "coefficient": -0.0001537394481549285,
+            "std_err": 0.0014669000770607934,
+            "t_stat": -0.10480567187846497,
+            "p_value": 0.9188285665521453,
+            "conf_lower": -0.003472097964587241,
+            "conf_upper": 0.003164619068277384
+          }
+        }
+      },
+      "stationarity": {
+        "sown_area_change": {
+          "adf_stat": -1.515924853707773,
+          "p_value": 0.5256193489963904,
+          "stationary": false
+        },
+        "msp_change": {
+          "adf_stat": -4.34940448211843,
+          "p_value": 0.0003643924872047686,
+          "stationary": true
+        }
+      },
+      "granger_causality": {
+        "lag_1": {
+          "f_stat": 1.50447268727813,
+          "p_value": 0.2480808246986516,
+          "df_denom": 10,
+          "df_num": 1,
+          "causal": false
+        },
+        "lag_2": {
+          "f_stat": 0.521131551317811,
+          "p_value": 0.6152040286191821,
+          "df_denom": 7,
+          "df_num": 2,
+          "causal": false
+        }
+      }
+    },
+    "Groundnut": {
+      "baseline_stats": {
+        "csv_name": "Groundnut",
+        "avg_modal": 5847.94,
+        "avg_min": 5547.59,
+        "avg_max": 6047.59,
+        "record_count": 17
+      },
+      "time_series": [
+        {
+          "year": 2010,
+          "sown_area": 5.5,
+          "sown_area_change_pct": 0.0,
+          "msp": 3392.99,
+          "msp_change_pct": 0.0,
+          "cost_index": 100.0,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 0.0
+        },
+        {
+          "year": 2011,
+          "sown_area": 5.565,
+          "sown_area_change_pct": 1.181,
+          "msp": 3718.05,
+          "msp_change_pct": 9.58,
+          "cost_index": 108.04,
+          "lagged_area_change_pct": 0.0,
+          "interaction_term": 1035.0232
+        },
+        {
+          "year": 2012,
+          "sown_area": 5.68,
+          "sown_area_change_pct": 2.064,
+          "msp": 3907.78,
+          "msp_change_pct": 5.1,
+          "cost_index": 115.01,
+          "lagged_area_change_pct": 1.181,
+          "interaction_term": 586.5509999999999,
+          "fitted_sown_area_change": 2.1693841670370166,
+          "residual": -0.10538416703701659
+        },
+        {
+          "year": 2013,
+          "sown_area": 5.792,
+          "sown_area_change_pct": 1.976,
+          "msp": 4207.91,
+          "msp_change_pct": 7.68,
+          "cost_index": 124.69,
+          "lagged_area_change_pct": 2.064,
+          "interaction_term": 957.6192,
+          "fitted_sown_area_change": 2.1105565448732557,
+          "residual": -0.13455654487325575
+        },
+        {
+          "year": 2014,
+          "sown_area": 5.946,
+          "sown_area_change_pct": 2.658,
+          "msp": 4440.17,
+          "msp_change_pct": 5.52,
+          "cost_index": 137.92,
+          "lagged_area_change_pct": 1.976,
+          "interaction_term": 761.3183999999999,
+          "fitted_sown_area_change": 2.3382742031142207,
+          "residual": 0.3197257968857792
+        },
+        {
+          "year": 2015,
+          "sown_area": 6.093,
+          "sown_area_change_pct": 2.472,
+          "msp": 4739.47,
+          "msp_change_pct": 6.74,
+          "cost_index": 146.49,
+          "lagged_area_change_pct": 2.658,
+          "interaction_term": 987.3426000000001,
+          "fitted_sown_area_change": 2.4668114780906523,
+          "residual": 0.00518852190934771
+        },
+        {
+          "year": 2016,
+          "sown_area": 6.264,
+          "sown_area_change_pct": 2.802,
+          "msp": 5019.81,
+          "msp_change_pct": 5.92,
+          "cost_index": 155.59,
+          "lagged_area_change_pct": 2.472,
+          "interaction_term": 921.0928,
+          "fitted_sown_area_change": 2.423726812259753,
+          "residual": 0.378273187740247
+        },
+        {
+          "year": 2017,
+          "sown_area": 6.432,
+          "sown_area_change_pct": 2.687,
+          "msp": 5321.59,
+          "msp_change_pct": 6.01,
+          "cost_index": 172.31,
+          "lagged_area_change_pct": 2.802,
+          "interaction_term": 1035.5831,
+          "fitted_sown_area_change": 2.4812822018649094,
+          "residual": 0.2057177981350904
+        },
+        {
+          "year": 2018,
+          "sown_area": 6.583,
+          "sown_area_change_pct": 2.347,
+          "msp": 5608.12,
+          "msp_change_pct": 5.38,
+          "cost_index": 187.33,
+          "lagged_area_change_pct": 2.687,
+          "interaction_term": 1007.8354,
+          "fitted_sown_area_change": 2.370923271373142,
+          "residual": -0.023923271373142097
+        },
+        {
+          "year": 2019,
+          "sown_area": 6.699,
+          "sown_area_change_pct": 1.768,
+          "msp": 5847.94,
+          "msp_change_pct": 4.28,
+          "cost_index": 197.87,
+          "lagged_area_change_pct": 2.347,
+          "interaction_term": 846.8836000000001,
+          "fitted_sown_area_change": 2.168810770508941,
+          "residual": -0.4008107705089412
+        },
+        {
+          "year": 2020,
+          "sown_area": 6.762,
+          "sown_area_change_pct": 0.942,
+          "msp": 6217.86,
+          "msp_change_pct": 6.33,
+          "cost_index": 214.01,
+          "lagged_area_change_pct": 1.768,
+          "interaction_term": 1354.6833,
+          "fitted_sown_area_change": 1.709026007755916,
+          "residual": -0.7670260077559161
+        },
+        {
+          "year": 2021,
+          "sown_area": 6.833,
+          "sown_area_change_pct": 1.046,
+          "msp": 6662.07,
+          "msp_change_pct": 7.14,
+          "cost_index": 226.08,
+          "lagged_area_change_pct": 0.942,
+          "interaction_term": 1614.2112,
+          "fitted_sown_area_change": 1.2352769161641213,
+          "residual": -0.18927691616412123
+        },
+        {
+          "year": 2022,
+          "sown_area": 6.934,
+          "sown_area_change_pct": 1.484,
+          "msp": 7281.22,
+          "msp_change_pct": 9.29,
+          "cost_index": 238.82,
+          "lagged_area_change_pct": 1.046,
+          "interaction_term": 2218.6377999999995,
+          "fitted_sown_area_change": 1.3065420373196241,
+          "residual": 0.17745796268037584
+        },
+        {
+          "year": 2023,
+          "sown_area": 7.063,
+          "sown_area_change_pct": 1.863,
+          "msp": 7645.95,
+          "msp_change_pct": 5.01,
+          "cost_index": 256.5,
+          "lagged_area_change_pct": 1.484,
+          "interaction_term": 1285.065,
+          "fitted_sown_area_change": 1.2550698486561527,
+          "residual": 0.6079301513438473
+        },
+        {
+          "year": 2024,
+          "sown_area": 7.137,
+          "sown_area_change_pct": 1.054,
+          "msp": 7951.22,
+          "msp_change_pct": 3.99,
+          "cost_index": 261.67,
+          "lagged_area_change_pct": 1.863,
+          "interaction_term": 1044.0633,
+          "fitted_sown_area_change": 1.333391203605038,
+          "residual": -0.2793912036050379
+        },
+        {
+          "year": 2025,
+          "sown_area": 7.212,
+          "sown_area_change_pct": 1.047,
+          "msp": 8247.08,
+          "msp_change_pct": 3.72,
+          "cost_index": 268.18,
+          "lagged_area_change_pct": 1.054,
+          "interaction_term": 997.6296000000001,
+          "fitted_sown_area_change": 0.8409245373726768,
+          "residual": 0.20607546262732312
+        }
+      ],
+      "regression": {
+        "r_squared": 0.7218770430444725,
+        "adj_r_squared": 0.598266839953127,
+        "f_statistic": 5.839947067403646,
+        "f_pvalue": 0.013405899052432252,
+        "durbin_watson": 1.5276256311706349,
+        "coefficients": {
+          "const": {
+            "coefficient": 4.401695448809133,
+            "std_err": 2.395812575636006,
+            "t_stat": 1.8372453227651309,
+            "p_value": 0.09934560724907524,
+            "conf_lower": -1.018009129887873,
+            "conf_upper": 9.82140002750614
+          },
+          "msp_change_pct": {
+            "coefficient": -0.3854246865677867,
+            "std_err": 0.39808177752367013,
+            "t_stat": -0.968204796927358,
+            "p_value": 0.3582390018545035,
+            "conf_lower": -1.2859482309723984,
+            "conf_upper": 0.5150988578368251
+          },
+          "cost_index": {
+            "coefficient": -0.016418498527963288,
+            "std_err": 0.010247887929866866,
+            "t_stat": -1.6021348633324277,
+            "p_value": 0.14358959025687862,
+            "conf_lower": -0.03960083161206489,
+            "conf_upper": 0.006763834556138312
+          },
+          "lagged_area_change_pct": {
+            "coefficient": 0.5049158048945879,
+            "std_err": 0.2103266449723554,
+            "t_stat": 2.4006269151535804,
+            "p_value": 0.039856897512854345,
+            "conf_lower": 0.02912387844305908,
+            "conf_upper": 0.9807077313461167
+          },
+          "interaction_term": {
+            "coefficient": 0.0017480842583921016,
+            "std_err": 0.0017626844040550987,
+            "t_stat": 0.9917170960216082,
+            "p_value": 0.3472478602279687,
+            "conf_lower": -0.002239384891993825,
+            "conf_upper": 0.005735553408778028
+          }
+        }
+      },
+      "stationarity": {
+        "sown_area_change": {
+          "adf_stat": -6.137956029633283,
+          "p_value": 8.100638214485808e-08,
+          "stationary": true
+        },
+        "msp_change": {
+          "adf_stat": -14.508789598524498,
+          "p_value": 5.770123184942621e-27,
+          "stationary": true
+        }
+      },
+      "granger_causality": {
+        "lag_1": {
+          "f_stat": 11.724968719688526,
+          "p_value": 0.006501725944237168,
+          "df_denom": 10,
+          "df_num": 1,
+          "causal": true
+        },
+        "lag_2": {
+          "f_stat": 12.9866949150938,
+          "p_value": 0.004408293992308473,
+          "df_denom": 7,
+          "df_num": 2,
+          "causal": true
+        }
+      }
+    }
+  }
+}

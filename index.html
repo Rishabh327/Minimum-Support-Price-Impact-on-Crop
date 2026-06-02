@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcreoMetrics - MSP Crop Acreage Econometric Regression Engine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <i class="fa-solid fa-chart-line brand-icon"></i>
+                <div class="brand-text">
+                    <h1>AcreoMetrics</h1>
+                    <span>Econometric Modeling Engine</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-menu">
+                <h3 class="menu-title">Select Commodity</h3>
+                <div class="crop-list" id="crop-selector">
+                    <!-- Crops dynamically inserted here -->
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="status-indicator">
+                    <span class="status-dot green"></span>
+                    <span class="status-label">Model Engine Active</span>
+                </div>
+                <div class="vercel-badge">
+                    <i class="fa-brands fa-envira"></i> Vercel Deploy Ready
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-title">
+                    <span class="breadcrumb">ECONOMETRIC POLICY SUITE</span>
+                    <h2>Minimum Support Price Impact on Crop Acreage</h2>
+                </div>
+                <div class="header-actions">
+                    <div class="badge ml-badge">
+                        <i class="fa-solid fa-microchip"></i> Econometric Regression OLS
+                    </div>
+                    <div class="badge stats-badge">
+                        <i class="fa-solid fa-graduation-cap"></i> Granger Causality
+                    </div>
+                </div>
+            </header>
+
+            <!-- Grid Container -->
+            <div class="dashboard-grid">
+                
+                <!-- Summary Stats (Top Row) -->
+                <div class="summary-card crop-meta-card">
+                    <div class="card-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+                    <div class="card-info">
+                        <span class="card-label">Active Crop</span>
+                        <h3 class="card-value" id="crop-name">Loading...</h3>
+                        <span class="card-subtext" id="crop-apmc-base">APMC Modal Anchor: --</span>
+                    </div>
+                </div>
+
+                <div class="summary-card model-fit-card">
+                    <div class="card-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <div class="card-info">
+                        <span class="card-label">Regression Fit (R²)</span>
+                        <h3 class="card-value" id="model-r2">--</h3>
+                        <span class="card-subtext" id="model-adj-r2">Adj. R²: --</span>
+                    </div>
+                </div>
+
+                <div class="summary-card causality-card">
+                    <div class="card-icon" id="causal-icon-container"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <div class="card-info">
+                        <span class="card-label">Causal Validation</span>
+                        <h3 class="card-value" id="causality-status">--</h3>
+                        <span class="card-subtext" id="causality-pvalue">Granger test: --</span>
+                    </div>
+                </div>
+
+                <!-- Charts Section (Span 2 Columns) -->
+                <div class="grid-card chart-card historical-chart-panel">
+                    <div class="card-header">
+                        <h4><i class="fa-solid fa-clock-rotate-left"></i> Historical Acreage & MSP Trends (2010 - 2025)</h4>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="legend-color area-color"></span> Acreage (MHa)</span>
+                            <span class="legend-item"><span class="legend-color msp-color"></span> MSP (Rs/Quintal)</span>
+                        </div>
+                    </div>
+                    <div class="card-body chart-wrapper">
+                        <canvas id="historicalChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Interactive Policy Simulator -->
+                <div class="grid-card simulator-card">
+                    <div class="card-header">
+                        <h4><i class="fa-solid fa-sliders"></i> "What-If" Policy Simulator</h4>
+                        <span class="header-badge">Live Prediction</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="simulator-desc">Simulate structural acreage responses using the fitted OLS coefficients & interaction drag terms.</p>
+                        
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="sim-msp-change">Proposed MSP Increase (%)</label>
+                                <span class="slider-val" id="sim-msp-val">+5.0%</span>
+                            </div>
+                            <input type="range" id="sim-msp-change" min="-10" max="25" step="0.5" value="5">
+                            <div class="slider-labels">
+                                <span>-10%</span>
+                                <span>+7.5%</span>
+                                <span>+25%</span>
+                            </div>
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="sim-cost-index">Agricultural Input Cost Index</label>
+                                <span class="slider-val" id="sim-cost-val">150</span>
+                            </div>
+                            <input type="range" id="sim-cost-index" min="100" max="300" step="5" value="150">
+                            <div class="slider-labels">
+                                <span>100 (Base)</span>
+                                <span>200</span>
+                                <span>300 (High inflation)</span>
+                            </div>
+                        </div>
+
+                        <div class="slider-group">
+                            <div class="slider-header">
+                                <label for="sim-lagged-area">Lagged Acreage Change (%)</label>
+                                <span class="slider-val" id="sim-lagged-val">+1.0%</span>
+                            </div>
+                            <input type="range" id="sim-lagged-area" min="-10" max="10" step="0.2" value="1">
+                            <div class="slider-labels">
+                                <span>-10%</span>
+                                <span>0%</span>
+                                <span>+10%</span>
+                            </div>
+                        </div>
+
+                        <!-- Simulator Results -->
+                        <div class="simulator-results">
+                            <div class="gauge-container">
+                                <div class="gauge-body">
+                                    <div class="gauge-fill" id="gauge-fill"></div>
+                                    <div class="gauge-cover">
+                                        <span class="prediction-value" id="predicted-change-val">--</span>
+                                        <span class="prediction-label">Acreage Shift (%)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prediction-breakdown">
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">MSP Incentive</span>
+                                    <span class="breakdown-val positive" id="bd-msp-incentive">+0.00%</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">Cost Drag Effect</span>
+                                    <span class="breakdown-val negative" id="bd-cost-drag">-0.00%</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">Interaction Term</span>
+                                    <span class="breakdown-val negative" id="bd-interaction-drag">-0.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="policy-advisory" id="policy-advisory-msg">
+                            Loading structural equations...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Chart: Cost Index vs Acreage Change -->
+                <div class="grid-card chart-card growth-chart-panel">
+                    <div class="card-header">
+                        <h4><i class="fa-solid fa-chart-area"></i> Input Cost Index vs Sown Area Growth Rate (%)</h4>
+                        <div class="chart-legend">
+                            <span class="legend-item"><span class="legend-color cost-color"></span> Input Cost Index</span>
+                            <span class="legend-item"><span class="legend-color growth-color"></span> Sown Area Change (%)</span>
+                        </div>
+                    </div>
+                    <div class="card-body chart-wrapper">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Econometric Regression Summary Table (Full Width) -->
+                <div class="grid-card regression-table-card span-full">
+                    <div class="card-header">
+                        <div class="header-left">
+                            <h4><i class="fa-solid fa-table-list"></i> Paper-Grade Econometric Regression Output (OLS Estimates)</h4>
+                            <span class="desc">Dependent Variable: <strong>Change in Sown Area (%)</strong></span>
+                        </div>
+                        <div class="dw-badge-container">
+                            <span class="dw-badge" id="dw-stat-badge">Durbin-Watson d: --</span>
+                            <span class="dw-badge" id="f-stat-badge">F-Statistic: --</span>
+                        </div>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="econometric-table">
+                            <thead>
+                                <tr>
+                                    <th>Regressor (Independent Variable)</th>
+                                    <th>Estimated Coeff (β)</th>
+                                    <th>Standard Error</th>
+                                    <th>t-Statistic</th>
+                                    <th>P-Value (P>|t|)</th>
+                                    <th>[95.0% Confidence Interval]</th>
+                                    <th>Significance</th>
+                                </tr>
+                            </thead>
+                            <tbody id="regression-coef-body">
+                                <!-- Dynamically populated -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Granger Causality Validation Card -->
+                <div class="grid-card causality-table-card span-full">
+                    <div class="card-header">
+                        <h4><i class="fa-solid fa-circle-nodes"></i> Temporal Causal Validation (Granger Causality Test)</h4>
+                        <span class="desc">Null Hypothesis (H₀): <strong>MSP Changes do not Granger-cause Acreage Changes</strong></span>
+                    </div>
+                    <div class="card-body causality-flex">
+                        <div class="causality-table-wrapper">
+                            <table class="stats-table">
+                                <thead>
+                                    <tr>
+                                        <th>Lag Length</th>
+                                        <th>F-Statistic</th>
+                                        <th>P-Value</th>
+                                        <th>Df (Num, Denom)</th>
+                                        <th>Causality Verified?</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="granger-table-body">
+                                    <!-- Dynamically populated -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="causality-narrative-panel">
+                            <h5><i class="fa-solid fa-quote-left"></i> Econometric Analysis & Causal Narrative</h5>
+                            <div class="narrative-content" id="causality-narrative-text">
+                                Loading causality parameters...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
