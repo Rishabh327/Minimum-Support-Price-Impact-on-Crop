@@ -1,0 +1,5 @@
+# Ignore Python engine files during Vercel deployment to prevent false Python runtime detection
+requirements.txt
+econometrics_engine.py
+inspect_csv.py
+csv.csv
